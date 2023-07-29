@@ -1,0 +1,93 @@
+/* font-family: 'Inter', sans-serif; */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: blue;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+}
+.nav__items2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__items2 :is(span) {
+  cursor: pointer;
+}
+
+.nav__items2 :is(ul) {
+  display: grid;
+
+  grid-template-columns: repeat(5, auto);
+  justify-content: end;
+  gap: 15%;
+}
+
+.nav__items2 :is(li) {
+  list-style: none;
+}
+li :where(a) {
+  color: hsl(236, 13%, 42%);
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.nav__items2 :is(a:hover) {
+  color: hsl(5, 85%, 63%);
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  border: 0px solid black;
+}
+
+.sidebar__items {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 8% 6%;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 100%;
+  bottom: 0;
+  transition: all 1.4s;
+  z-index: 10;
+}
+.sActive {
+  left: 30%;
+}
+
+.sidebar__items1 {
+  padding-top: 70%;
+}
+
+.sidebar__items1 :is(ul) {
+  display: grid;
+  list-style: none;
+  gap: 20%;
+}
+.sidebar__items1 :is(a) {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.sidebar__item2 {
+  cursor: pointer;
+}
+
+@media (max-width: 614px) {
+  .nav {
+    margin-bottom: 7%;
+  }
+}

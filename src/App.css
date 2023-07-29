@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.app {
+  background-color: hsl(36, 100%, 99%);
+  padding: 4% 2.7% 0 2.7%;
+  min-height: 100dvh;
+}
+
+.main__container {
+  max-width: 1440px;
+  color: red;
+  margin: 0 auto;
+}
+
+@media (max-width: 614px) {
+  .app {
+    padding: 7% 4% 20% 4%;
+  }
+}
