@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
+- Solution URL:  https://github.com/TANJIRWEBDEV/Responsive_news_homepage
 - Live Site URL: https://tourmaline-bienenstitch-4284ff.netlify.app/
 
 ## My process
